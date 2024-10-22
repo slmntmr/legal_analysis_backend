@@ -10,7 +10,7 @@ public class WebConfig implements WebMvcConfigurer {
     @Override
     public void addCorsMappings(CorsRegistry registry) {
         registry.addMapping("/**")  // Tüm path'ler için CORS'u etkinleştirir
-                .allowedOrigins("http://localhost:3000", "https://legal-analysis-frontend.vercel.app")  // Hem localhost hem de Vercel URL'sini ekleyin
+                .allowedOrigins("http://localhost:3000", "https://legaliz-ai.vercel.app")  // Hem localhost hem de Vercel URL'sini ekleyin
                 .allowedMethods("GET", "POST", "PUT", "DELETE", "OPTIONS")  // İzin verilen HTTP metodları
                 .allowedHeaders("*")  // Tüm header'lara izin verir
                 .allowCredentials(true);  // Credential (Çerez, Authorization gibi) desteğini etkinleştirir
